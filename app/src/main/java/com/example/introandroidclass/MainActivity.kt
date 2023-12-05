@@ -1,5 +1,6 @@
 package com.example.introandroidclass
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
@@ -12,8 +13,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var submitButton: MaterialButton
     private val emailRegex = Regex("[A-Za-z]+[A-Za-z0-9._]+@[A-Za-z]+\\.[A-Za-z]{2,3}")
 
-    private var emailText = ""
-    private var passwordText = ""
+//    private var emailText = ""
+//    private var passwordText = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +35,15 @@ class MainActivity : AppCompatActivity() {
         if (password != "password") {
             return "Incorrect password"
         }
+        login()
         return  "Login Successful"
+    }
+
+    private fun login() {
+        emailInput.setText("")
+        passwordInput.setText("")
+        val intent = Intent(this, ScrollableActivity::class.java)
+        startActivity(intent)
     }
 
     private fun initializeView() {
