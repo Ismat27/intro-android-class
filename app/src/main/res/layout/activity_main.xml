@@ -7,36 +7,73 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtTapOutput"
+        android:id="@+id/emailLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Hello World!"
-        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="@string/email_label"
+        android:textSize="@dimen/label_text"
+        android:gravity="start"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
-        android:text="Become a developer"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtTapOutput"
-        app:layout_constraintStart_toStartOf="@+id/txtTapOutput"
-        app:layout_constraintTop_toBottomOf="@+id/btnTap" />
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="@color/wemaCode"
+        app:layout_constraintEnd_toEndOf="@+id/emailLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/password_label"
+        android:textSize="@dimen/label_text"
+        app:layout_constraintEnd_toEndOf="@+id/emailInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_password"
+        android:textColorHint="@color/wemaCode"
+        android:background="@android:drawable/editbox_background"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordLabel"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnTap"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Tap me"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="@+id/txtTapOutput"
-        app:layout_constraintStart_toStartOf="@+id/txtTapOutput"
-        app:layout_constraintTop_toBottomOf="@+id/txtTapOutput" />
+        android:backgroundTint="@color/wemaCode"
+        android:text="@string/submit_text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

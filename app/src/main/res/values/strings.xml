@@ -2,4 +2,9 @@
     <string name="app_name">introAndroidClass</string>
     <string name="now_a_wema_developer">You are now a wema developer</string>
     <string name="becoming_a_developer">You are %d to become a wema developer</string>
+    <string name="enter_password">Enter password</string>
+    <string name="email_label">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="submit_text">Submit</string>
+    <string name="password_label">Password</string>
 </resources>
