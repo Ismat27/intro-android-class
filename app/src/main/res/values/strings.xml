@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">introAndroidClass</string>
+    <string name="now_a_wema_developer">You are now a wema developer</string>
+    <string name="becoming_a_developer">You are %d to become a wema developer</string>
+</resources>
