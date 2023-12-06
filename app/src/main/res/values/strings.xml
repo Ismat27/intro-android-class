@@ -7,4 +7,6 @@
     <string name="enter_email">Enter Email</string>
     <string name="submit_text">Submit</string>
     <string name="password_label">Password</string>
+    <string name="welcome_text">My trips</string>
+    <string name="bolt_ride">bolt ride</string>
 </resources>
